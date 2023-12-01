@@ -67,7 +67,6 @@ fn setup(mut commands: Commands, images: Res<ImageAssets>, mut sprite_params: Sp
     let sprite_3d: Sprite3dBundle = Sprite3d {
         image: images.image.clone(),
         pixels_per_metre: 400.,
-        partial_alpha: false,
         unlit: true,
         transform: Transform::from_xyz(50., 50., 0.).with_scale(Vec3::new(20.0, 20.0, 0.01)),
         // pivot: Some(Vec2::new(0.5, 0.5)),
@@ -77,7 +76,6 @@ fn setup(mut commands: Commands, images: Res<ImageAssets>, mut sprite_params: Sp
     let plume: Sprite3dBundle = Sprite3d {
         image: images.plume.clone(),
         pixels_per_metre: 400.,
-        partial_alpha: false,
         unlit: true,
         transform: Transform::from_xyz(0., -2.0, 0.).with_scale(Vec3::new(1.0, 1.0, 0.01)),
         ..default()

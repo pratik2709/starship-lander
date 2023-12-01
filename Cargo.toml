@@ -14,7 +14,7 @@ ndarray = "0.15.4"
 bevy_normal_material = {  git = "https://github.com/mattatz/bevy_normal_material.git" , rev = "e64317399a3659282c43ca3e7dca857ed75e0057"}
 bevy_asset_loader = { version = "0.16", features = ["2d"] }
 bevy_rapier3d = {version = "0.22.0", features = ["wasm-bindgen"]}
-bevy_sprite3d = "2.6"
+bevy_sprite3d = "2.5"
 
 [target.wasm32-unknown-unknown]
 runner = "wasm-server-runner"
